@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="math tools">
+        <meta name="author" content="Chris Karamichailidis">
+
+
+        <!-- CSRF Token -->
+
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+
+
+        <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
+        <!-- @yield('styles') -->
+
+        <title>TechFreak</title>
+    </head>
+    <body>
+      <nav id="navbar" class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <img src="images/Tech_Freak_logo.png" alt="Tech Freak: a modern site">
+          </a>
+
+          <!-- <button class="button navbar-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button> -->
+        </div>
+        <div class="navbar-menu is-active">
+          <div class="navbar-start">
+            <!-- navbar items -->
+            <a href="#" class="navbar-item" style="color: black;">
+              Home
+            </a>
+            <a class="navbar-item" style="color: black;">
+              Tools
+            </a>
+            <a class="navbar-item" style="color: black;">
+              Kodi
+            </a>
+
+          </div>
+
+          <div class="navbar-end">
+            <!-- navbar items -->
+            <a class="navbar-item" style="color: black;">
+              Hey Visitor
+            </a>
+
+          </div>
+        </div>
+      </nav>
+
+      <!-- <div id="app">
+          @yield('content')
+      </div> -->
+
+            <div id="app" class="container">
+          <input-number @val-changed="findAllPrimes"></input-number>
+
+            <tabs>
+                <tab name="Analyze into prime factors" :selected="true">
+                  <div id="box1" style="padding:20px" >
+                    <tab1-content :output="solution"></tab1-content>
+                  </div>
+
+                </tab>
+
+                <tab name="All primes smaller than your number">
+                    <tab2-content :output = "solution"></tab2-content>
+                </tab>
+
+                <tab name="The roman representation">
+                    <tab3-content :output = "solution"></tab3-content>
+                </tab>
+            </tabs>
+        </div>
+        <footer class="footer">
+            <div class="container">
+              <div class="content has-text-centered">
+                <p>
+                  <strong>TechFreak</strong> by <a href="#">Chris Karamichailidis</a>. The source code is licensed
+                  <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+                </p>
+              </div>
+            </div>
+        </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- @yield('scripts') -->
+
+
+    </body>
+</html>
