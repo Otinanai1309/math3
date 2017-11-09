@@ -167,7 +167,7 @@ Vue.component('tab1-content', {
   <div class="card">
     <div class="card-image">
       <figure class="image is-4by2">
-        <img src=".../../images/primes_1.jpg" alt="Placeholder image">
+        <img src="../../images/primes_1.jpg" alt="Placeholder image">
       </figure>
     </div>
 
@@ -190,7 +190,7 @@ Vue.component('tab2-content', {
   <div class="card">
     <div class="card-image">
       <figure class="image is-4by2">
-        <img src=".../../images/primes_2.jpg" alt="Placeholder image">
+        <img src="../../images/primes_2.jpg" alt="Placeholder image">
       </figure>
     </div>
 
